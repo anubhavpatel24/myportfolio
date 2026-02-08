@@ -1,0 +1,86 @@
+* {
+  cursor: url('/assets/arrow.webp'), auto !important;
+}
+
+*:hover {
+  cursor: url('/assets/arrow.webp'), pointer !important;
+}
+
+/* For clickable elements */
+a:hover, button:hover, input[type="submit"]:hover, input[type="button"]:hover, 
+.clickable:hover, [role="button"]:hover, .linkedin:hover, .instagram:hover, img:hover {
+  cursor: url('/assets/link.webp'), pointer !important;
+}
+
+@font-face {
+  font-family: 'Sora';
+  src: url('/fonts/sora.woff2') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jersey';
+  src: url('/fonts/Jersey15-Regular.woff2') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JetBrainsMono';
+  src: url('/fonts/JetBrainsMono-Regular.woff2') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0 ;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  z-index: 1;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Add after your existing styles */
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus {
+  outline: none;
+}
+
+/* Remove default focus styles for all elements */
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+/* Only allow text selection for specific elements */
+p, h1, h2, h3, h4, h5, h6 {
+  -webkit-user-select: text;
+  user-select: text;
+}
+

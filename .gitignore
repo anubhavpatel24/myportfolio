@@ -1,0 +1,29 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Env files
+.env
+.env.local
+
+# PHP
+/vendor/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Build folders
+dist/
+build/
+
+# Cache
+.cache/
+
+# Uploads (agar server par files upload hoti hain)
+uploads

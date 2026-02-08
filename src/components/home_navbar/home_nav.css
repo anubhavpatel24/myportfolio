@@ -1,0 +1,75 @@
+.home_nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 4rem 5rem;
+}
+
+.home_nav .logo, .contact_button {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.home_nav .logo{
+    font-family: 'Jersey', sans-serif;
+    font-size: 4vw;
+    font-weight: 400;
+    color: #F3BC49;
+}
+
+.contact_button{
+    font-family: 'Jersey', sans-serif;
+    font-size: 1.4vw;
+    font-weight: 550;
+    color: #000000;
+    background-color: #ffffff;
+    border: 2px solid #BDBDBD;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contact_button:hover{
+    background-color: #ffffff;
+    color: #002034;
+    border: 1px solid #002034;
+}
+
+@media (max-width: 768px){
+    .home_nav{
+        padding: 3.5rem 4rem;
+    }
+
+    .home_nav .logo{
+        font-size: 6vw;
+    }
+
+    .contact_button{
+        font-size: 3vw;
+        padding: 0.5rem 1rem;
+    }
+}
+
+@media (max-width: 425px){
+    .home_nav{
+        padding: 3.5rem 2rem;
+    }
+
+    .home_nav .logo{
+        font-size: 10vw;
+    }
+
+    .contact_button{
+        font-size: 5vw;
+        padding: 0.5rem 1rem;
+    }
+}

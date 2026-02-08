@@ -1,0 +1,162 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 0 2rem;
+}
+
+.nav_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+    background-color: rgba(255, 255, 255);
+    border-bottom: 3px solid rgb(156, 156, 156);
+    border-left: 3px solid rgb(156, 156, 156);
+    border-right: 3px solid rgb(156, 156, 156);
+    backdrop-filter: blur(10px);
+    padding: 0.6rem 2rem;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    gap: 2.5rem;
+}
+
+.nav_container img.active {
+    filter: brightness(1.5);
+    transform: scale(1.1);
+}
+
+.nav_container .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.nav_container img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav_container img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+/* Tooltip styles */
+.tooltip {
+    position: absolute;
+    bottom: 0px;  
+    left: 30px;   
+    background: rgba(0, 0, 0, 0.923);
+    color: white;
+    border: 2px solid rgb(68, 79, 93);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: "Sora";
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s, visibility 0.2s;
+    pointer-events: none; /* Ensures tooltip doesn't interfere with clicks */
+    z-index: 101; /* Ensure the tooltip appears above other elements */
+}
+
+.nav-link:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Add a small arrow to the tooltip - Left side */
+.tooltip::after {
+    content: '';
+    position: absolute;
+    top: 50%;     /* Center vertically */
+    left: -12px;   /* Position to the left of the tooltip */
+    margin-top: -5px; /* Adjust to center the arrow */
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent rgb(19, 19, 19) transparent transparent; /* Arrow pointing left */
+}
+
+@media (max-width: 768px) {
+    .nav_container {
+        padding: 0.5rem 2rem;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        gap: 2rem;
+    }
+    
+    .nav_container img {
+        width: 22px;
+    }
+    
+    .tooltip {
+        bottom: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 11px;
+        padding: 4px 8px;
+    }
+    
+    .tooltip::after {
+        top: -10px;
+        left: 50%;
+        margin-left: -5px;
+        margin-top: 0;
+        border-color: transparent transparent rgba(0, 0, 0, 0.923) transparent; /* Arrow pointing up */
+    }
+}
+
+@media (max-width: 425px) {
+    .navbar {
+        bottom: 0;
+        top: auto;
+        align-self: flex-end;
+    }
+    
+    .nav_container {
+        padding: 0.5rem 1.5rem;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom: none;
+        border-top: 3px solid rgb(156, 156, 156);
+        gap: 2rem;
+    }
+    
+    .nav_container img {
+        width: 20px;
+    }
+    
+    /* Adjust tooltip position for mobile */
+    .tooltip {
+        top: -30px;
+        bottom: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 10px;
+        padding: 3px 6px;
+    }
+    
+    .tooltip::after {
+        top: auto;
+        bottom: -10px;
+        left: 50%;
+        margin-left: -5px;
+        margin-top: 0;
+        border-color: rgba(0, 0, 0, 0.923) transparent transparent transparent; /* Arrow pointing down */
+    }
+}
