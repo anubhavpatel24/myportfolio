@@ -8,11 +8,11 @@ const Freak_Lifestyle = () => {
       <div>
         <Portfolioproject
           backgroundImage={'/assets/Freak-Lifestyle.webp'}
-          project_name={'Freak Lifestyle'}
+          project_name={'Digital E-commerce Store'}
           project_overview={'Streetwear Clothing Brand which is co-founded by me, it is a platform for people to buy streetwear clothing. This website is an eccomerse store for that brand.'}
-          role={'Co-founder, Developer'}
-          tech={'Wordpress, WooCommerce, Elementor'}
-          link={'https://freaklifestyle.com'}
+          role={'Full Stack Developer'}
+           tech={'WordPress, WooCommerce, Elementor, Razorpay, SEO'}
+          link={'https://wpnepal.com.np/'}
         />
       </div>
     </ProjectWrapper>

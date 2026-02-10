@@ -30,7 +30,7 @@ const Aboutpage = () => {
       ]
     },
     {
-      category: "Backend",
+      category: "Backend & Databases",
       skills: [
         { name: "Node.js", icon: getIconPath("nodejs") },
         { name: "Express.js", icon: getIconPath("expressjs") },
@@ -44,15 +44,14 @@ const Aboutpage = () => {
         { name: "GitHub", icon: getIconPath("github") },
         { name: "Vercel", icon: getIconPath("vercel") },
         { name: "Vite", icon: getIconPath("vite") },
-        { name: "Arduino IDE", icon: getIconPath("arduino") },
-        { name: "JSON", icon: getIconPath("json") }
       ]
     },
     {
       category: "Design Tools",
       skills: [
         { name: "Figma", icon: getIconPath("figma") },
-        { name: "Photoshop", icon: getIconPath("photoshop") }
+        { name: "Photoshop", icon: getIconPath("photoshop") },
+        { name: "Canva", icon: getIconPath("canva") }
       ]
     },
     {
@@ -60,7 +59,6 @@ const Aboutpage = () => {
       skills: [
         { name: "WordPress", icon: getIconPath("wordpress") },
         { name: "WooCommerce", icon: getIconPath("woocommerce") },
-        { name: "Shopify", icon: getIconPath("shopify") }
       ]
     },
     {
@@ -70,11 +68,9 @@ const Aboutpage = () => {
       ]
     },
     {
-      category: "Languages",
+      category: "Basic Languages",
       skills: [
-        { name: "C", icon: getIconPath("c") },
-        { name: "Python", icon: getIconPath("python") },
-        { name: "Java", icon: getIconPath("java") }
+        { name: "Python", icon: getIconPath("python") }
       ]
     }
   ];
@@ -88,7 +84,7 @@ const Aboutpage = () => {
     link.href = '/assets/resume.pdf'; // You need to add your resume.pdf to public/assets/
 
     // Set the download attribute to suggest a filename for the download
-    link.download = 'Revanshu_Pusadkar_Resume.pdf';
+    link.download = 'Anubhav_Patel_Resume.pdf';
 
     // Append to the body
     document.body.appendChild(link);
@@ -118,14 +114,16 @@ const Aboutpage = () => {
       <div className="heading"><h1>ABOUT ME</h1></div>
       <div className="about-container">
         <div className="personal-info">
-          <div className="pfp"></div>
-          <div className="my-name"><span>Revanshu Pusadkar</span></div>
-          <div className="bio"><span>Developer, Designer, Techgeek</span></div>
+          <div className="pfp">
+            <img src="/assets/anubhav.webp" alt="Anubhav Patel" className="pfp-img" />
+          </div>
+          <div className="my-name"><span>Anubhav Patel</span></div>
+          <div className="bio"><span>Web Developer</span></div>
           <button className="resume" onClick={handleResumeDownload}>Resume</button>
         </div>
         <div className="info">
           <div className="description">
-            <p>I'm <strong>Revanshu</strong> — a <strong>creative</strong> and <strong>curious</strong> mind who enjoys working on side projects, fun ideas, and tools that actually <strong>solve problems</strong>.</p>
+            <p>I'm <strong>Anubhav</strong> — a <strong>creative</strong> and <strong>curious</strong> mind who enjoys working on side projects, fun ideas, and tools that actually <strong>solve problems</strong>.</p>
 
             <p>I like building things that <strong>look good</strong>, <strong>feel smooth</strong>, and <strong>make sense</strong>.</p>
 
@@ -133,7 +131,7 @@ const Aboutpage = () => {
 
             <p>In my free time, I enjoy:</p>
             <ul>
-              <li>football <span className="emoji">⚽</span></li>
+              <li>Cricket <span className="emoji">🏏</span></li>
               <li>traveling <span className="emoji">✈️</span></li>
               <li>gaming <span className="emoji">🎮</span></li>
               <li>music <span className="emoji">🎧</span></li>

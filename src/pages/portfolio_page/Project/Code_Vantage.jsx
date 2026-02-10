@@ -4,16 +4,17 @@ import Portfolioproject from '../../../components/portfolio_project/Portfoliopro
 
 const Project1 = () => {
     return (
-        <ProjectWrapper>
-            <Portfolioproject 
-            backgroundImage={'/assets/Code_Vantage_bg.webp'}
-            project_name={'Code Vantage'}
-            project_overview={'Code Vantage is a Web Design Agency which is co-founded by me, it helps people to create next-gen web interface. This website is interactive, futuristic and visually appealing. '}
-            role={'UI/UX Designer, Developer'}
-            tech={'Figma, Photoshop, Spline, React, GSAP, CSS'}
-            link={'https://codevantage.in'}
-            />
-        </ProjectWrapper>
+      <ProjectWrapper>
+  <Portfolioproject 
+    backgroundImage={'/assets/Code_Vantage_bg.webp'}
+    project_name={'E-Commerce'}
+    project_overview={'A streetwear e-commerce platform with product browsing, cart, secure checkout, order management, and a modern, fully responsive UI for a smooth shopping experience.'}
+    role={'Full Stack Developer'}
+    tech={'Frontend: React, Tailwind CSS | Backend: NestJS | Database: Firebase'}
+    link={'https://e-react-dc29.vercel.app/'}
+  />
+</ProjectWrapper>
+
     )
 }
 

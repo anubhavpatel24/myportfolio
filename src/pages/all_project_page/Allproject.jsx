@@ -6,8 +6,8 @@ import ProjectCard from '../../components/ProjectCard/ProjectCard';
 
 const Allproject = () => {
   const projects = [
-    { id: 1, name: 'Code Vantage', description: 'Web Design Agency, interactive & Visually appealing website', link: '/portfolio/codevantage' },
-    { id: 2, name: 'Freak Lifestyle', description: 'Streetwear Clothing Brand', link: '/portfolio/freaklifestyle' },
+    { id: 1, name: 'E-Commerce', description: 'A complete e-commerce platform built with NestJS, React, Firebase, and Tailwind CSS.', link: '/portfolio/codevantage' },
+    { id: 2, name: 'Digital E-commerce Store', description: 'A WordPress-based e-commerce store for a accessories product', link: '/portfolio/freaklifestyle' },
     { id: 3, name: 'Coming Soon', description: 'lorem ipsum dolor set emit', link: '#' },
     { id: 4, name: 'Coming Soon', description: 'lorem ipsum dolor set emit', link: '#' },
     // { id: 5, name: 'Coming Soon', description: 'lorem ipsum dolor set emit', link: '#' },
