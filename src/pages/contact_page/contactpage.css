@@ -109,11 +109,11 @@
     justify-content: center;
     width: 100%;
     height: auto;
-    gap: 3rem;
+    gap: 2rem;
 }
 
 .socials img{
-    width:45px;
+    width: 38px;
     height: auto;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
@@ -122,6 +122,17 @@
 .socials img:hover{
     transform: scale(1.1);
     filter: brightness(0.8);
+}
+
+.socials img.star-icon{
+    cursor: default !important;
+    pointer-events: none !important;
+    transition: none !important;
+}
+
+.socials img.star-icon:hover{
+    transform: none !important;
+    filter: none !important;
 }
 
 .contactpage_container_form textarea{
@@ -186,7 +197,7 @@
         font-size: 2.5vw;
     }
     .socials{
-        gap: 2rem;
+        gap: 1.5rem;
     }
     .socials img{
         width: 40px;
@@ -252,7 +263,7 @@
     }
     .socials{
        order: 10;
-       gap: 1rem;
+       gap: 0.8rem;
     }
     .socials img{
         width: 45px;

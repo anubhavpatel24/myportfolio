@@ -55,12 +55,11 @@ const Contactpage = () => {
               <input type="email" placeholder="Email" name="email" required />
               <input type="number" placeholder="Phone Number" name="phone" required />
               <div className="socials">
-                <img src="assets/Pixel Star.webp" alt="pixel star" />
+                <img src="assets/Pixel Star.webp" alt="pixel star" className="star-icon" />
                 <a href="https://www.instagram.com/___itzraj___xx?igsh=MWh0ZnR6a3dkajlxNw==" target="_blank" rel="noopener noreferrer"><img src="assets/Instagram_Icon.webp" alt="instagram icon" /></a>
                 <a href="https://github.com/anubhavpatel24" target="_blank" rel="noopener noreferrer"><img src="assets/Github_Icon.webp" alt="github icon" /></a>
                 <a href="https://www.linkedin.com/in/anubhavpatel24/" target="_blank" rel="noopener noreferrer"><img src="assets/LinkedIn_Icon.webp" alt="linkedin icon" /></a>
-                <img src="assets/Pixel Star.webp" alt="pixel star" />
-
+                <img src="assets/Pixel Star.webp" alt="pixel star" className="star-icon" />
               </div>
             </div>
             <div className="message_container">
